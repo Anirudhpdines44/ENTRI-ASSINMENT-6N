@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Student Grade Calculator</h1>
+        <div class="header-labels">
+            <span class="subject-label">Subject</span>
+            <span class="marks-label">Marks Obtained</span>
+            <span class="total-marks-label">Total Marks</span>
+        </div>
+        <div class="input-section">
+            <div class="subject-row">
+                <label>Subject 1:</label>
+                <div class="subject-inputs">
+                    <input type="number" id="sub1_marks" min="0" placeholder="Marks" value="88">
+                    <input type="number" id="sub1_total" min="1" placeholder="Total" value="100">
+                </div>
+            </div>
+            <div class="subject-row">
+                <label>Subject 2:</label>
+                <div class="subject-inputs">
+                    <input type="number" id="sub2_marks" min="0" placeholder="Marks" value="78">
+                    <input type="number" id="sub2_total" min="1" placeholder="Total" value="100">
+                </div>
+            </div>
+            <div class="subject-row">
+                <label>Subject 3:</label>
+                <div class="subject-inputs">
+                    <input type="number" id="sub3_marks" min="0" placeholder="Marks" value="67">
+                    <input type="number" id="sub3_total" min="1" placeholder="Total" value="100">
+                </div>
+            </div>
+            <div class="subject-row">
+                <label>Subject 4:</label>
+                <div class="subject-inputs">
+                    <input type="number" id="sub4_marks" min="0" placeholder="Marks" value="98">
+                    <input type="number" id="sub4_total" min="1" placeholder="Total" value="100">
+                </div>
+            </div>
+            <div class="subject-row">
+                <label>Subject 5:</label>
+                <div class="subject-inputs">
+                    <input type="number" id="sub5_marks" min="0" placeholder="Marks" value="85">
+                    <input type="number" id="sub5_total" min="1" placeholder="Total" value="100">
+                </div>
+            </div>
+        </div>
+        
+        <button onclick="calculateAndDisplay()">Calculate</button>
+
+        <div class="results-section">
+            <p>Total Marks: <span id="total-marks">--</span></p>
+            <p>Average: <span id="average-marks">--</span></p>
+            <p>Grade: <span id="final-grade">--</span></p>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
